@@ -16,7 +16,7 @@ function Layout({children}) {
             <Grid height={'92%'} item md={2.15} lg={2.15}>
              <SideBar/>
             </Grid>
-            <Grid height={'92%'} item md={9.85} lg={9.85}>
+            <Grid height={'92%'} item md={9.85} lg={9.85} sx={{overflow:'auto'}}>
                 {children}
             </Grid>
         </Grid>
