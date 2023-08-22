@@ -1,4 +1,4 @@
-import { Box, Grid, Paper } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import "./layoutHeader.scss";
 import headerLogo from "../../assets/Logo.svg";
