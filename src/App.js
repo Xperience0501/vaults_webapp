@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Layout from './components/layout/Layout';
 import SwapComponent from './components/swap/SwapComponent';
+import AssetComponent from './components/asset/AssetComponent';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Layout>
         <Routes>
             <Route path='/swap' element={ <SwapComponent/>}/>
+            <Route path='/assets' element={ <AssetComponent/>}/>
         </Routes>
       </Layout>
 

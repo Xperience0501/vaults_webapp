@@ -24,6 +24,9 @@ function SideBar() {
     if(pagename === 'Swap'){
       navigate('/swap');
       setselectedTab('swap')
+    }else if(pagename==='Assets'){
+      navigate('/assets');
+      setselectedTab('assets')
     }
   }
 
