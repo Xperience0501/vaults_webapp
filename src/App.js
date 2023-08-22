@@ -4,14 +4,17 @@ import './App.css';
 import Layout from './components/layout/Layout';
 import SwapComponent from './components/swap/SwapComponent';
 import AssetComponent from './components/asset/AssetComponent';
+import DefaultPage from './components/default page/DefaultPage';
 
 function App() {
   return (
     <div className='app' style={{width:'100vw',height:'100vh'}}>
       <Layout>
         <Routes>
+        <Route path='/' element={ <DefaultPage/>}/>
             <Route path='/swap' element={ <SwapComponent/>}/>
             <Route path='/assets' element={ <AssetComponent/>}/>
+            
         </Routes>
       </Layout>
 
