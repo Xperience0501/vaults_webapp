@@ -8,16 +8,206 @@
 
    .swap-main-content{
     // margin-left: 50px;
-    border: 1px solid white;
-    height: 80%;
+    // border: 1px solid white;
+    height: fit-content;
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+
+    .down-arrow{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+        background: #011D3B ;
+
+        position: absolute;
+        top: 38%;
+        left: 56%;
+
+        z-index: 2;
+    }
+    .swap-content{
+        // border: 1px solid green;
+        width: 80%;
+        height: 355px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        border-radius: 6px;
+        background: #011D3B;
+    }
+
+    .swap-heading-1{
+        width: 95%;
+        height: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30%;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 133.333% */
+        letter-spacing: 0.1px;
+    }
+    .swap-heading-2{
+        // border: 1px solid red;
+        width: 95%;
+        height: 35px;
+        border-radius: 6px;
+        background: #134072;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 200% */
+        letter-spacing: 0.1px;
+        text-transform: capitalize;
+    }
+    .swap-heading-3{
+        // border: 1px solid red;
+        width: 95%;
+        height: 35px;
+        border-radius: 6px;
+        background: #134072;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 133.333% */
+        letter-spacing: 0.1px;
+    }
+    .swap-details{
+        // border: 1px solid red;
+        width: 95%;
+        height: 89px;
+        border-radius: 6px;
+        background: #134072;
+        position: relative;
+        z-index: 1;
+    }
+    .available-cryp{
+        position: absolute;
+
+        top: 5%;
+        left: 5%;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 200% */
+        letter-spacing: 0.1px;
+    }
+    .half-max{
+        // border: 1px solid white;
+        width: 80px;
+        height: 20px;
+        position: absolute;
+        right: 5%;
+        top: 4%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 200% */
+        letter-spacing: 0.1px;
+
+       .half, .max{
+        border-radius: 2px;
+        border: 0.5px solid #7CE7FF;
+        width: 35px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       }
+    }
+
+    .cryp-div{
+        position: absolute;
+        top: 40%;
+        left: 13%;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 133.333% */
+        letter-spacing: 0.1px;
+
+        .cryp-menu{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cosmo{
+            color: #FFF;
+            font-family: 'Rubik',sans-serif;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px; /* 200% */
+            letter-spacing: 0.1px;
+        }
+    }
+
+    .convertTo{
+        top: 30%;
+    }
+    .selected-cryp{
+        position: absolute;
+        top: 40%;
+        right: 6%;
+
+        color: #FFF;
+        font-family: 'Rubik',sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; /* 133.333% */
+        letter-spacing: 0.1px;
+    }
    }
 
 
    .swap-img{
     width: 70%;
     .img-container{
-        width: 100%;
+        width: 95%;
     }
 
     img{
