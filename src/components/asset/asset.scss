@@ -1,0 +1,200 @@
+.asset-main {
+  // border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .buttons-div {
+    // border: 1px solid white;
+    height: 60px;
+    width: 33%;
+
+    position: absolute;
+    top: 9%;
+    left: 3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 1s0px;
+  }
+
+  .deposit-btn,
+  .withdraw-btn {
+    width: 45%;
+    height: 57px;
+    border-radius: 6px;
+    border: 1px solid #7ce7ff;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
+  .asset-details {
+    width: 72%;
+    height: 149px;
+    border-radius: 24px;
+    background: #011d3b;
+
+    position: absolute;
+    top: 22%;
+    left: 3%;
+
+    display: flex;
+    gap: 7%;
+
+    .assets-balance {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .balance-heading {
+      color: #7ce7ff;
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 133.333% */
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      // margin-top: 20%;
+    }
+    .balance {
+      color: #fff;
+      font-family: "Rubik", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 41.667% */
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-top: 25px;
+    }
+  }
+
+  .all-assets {
+    width: 72%;
+    height: 30px;
+    // border: 1px solid white;
+
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    display: flex;
+    .assets-table-heading {
+      width: 30%;
+      height: 100%;
+
+      color: #7ce7ff;
+      font-family: "Rubik", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 83.333% */
+      letter-spacing: 1px;
+      text-transform: capitalize;
+
+      display: flex;
+      align-items: center;
+      padding-left: 4%;
+      // text-align: center;
+    }
+
+    .assets-table-controls {
+      width: 85%;
+      height: 100%;
+
+      color: #7ce7ff;
+      font-family: "Rubik", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 133.333% */
+      letter-spacing: 1px;
+      text-transform: capitalize;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .zero-switch {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .assets-table-search {
+        border-radius: 6px;
+        border: 1px solid #7ce7ff;
+        width: 35%;
+        height: 100%;
+        position: relative;
+        img {
+          position: absolute;
+          top: 35%;
+          right: 2%;
+        }
+
+        input {
+          width: 99%;
+          height: 100%;
+          color: #9adbff;
+          padding-left: 10px;
+          border: none;
+          outline: none;
+          background: transparent;
+        }
+        input::placeholder {
+          color: #7ce7ff;
+          font-family: "Rubik", sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 133.333% */
+          letter-spacing: 1px;
+          text-transform: capitalize;
+        }
+      }
+
+      .sort-table {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // gap: 2%;
+      }
+    }
+  }
+  .assets-table {
+    width: 72%;
+    height: 64px;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+
+    .assets-transac-table {
+      width: 100%;
+      height: 100%;
+
+      border: 1px solid #7ce7ff;
+      border-radius: 12px;
+      color: #7ce7ff;
+    }
+  }
+}
