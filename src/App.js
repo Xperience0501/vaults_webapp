@@ -1,23 +1,21 @@
 // import logo from './logo.svg';
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import Layout from './components/layout/Layout';
-import SwapComponent from './components/swap/SwapComponent';
-import AssetComponent from './components/asset/AssetComponent';
-import DefaultPage from './components/default page/DefaultPage';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Layout from "./components/layout/Layout";
+import SwapComponent from "./components/swap/SwapComponent";
+import DashBoardHeader from "./components/dashboardHeader/DashBoardHeader";
+import DashBoardComp from "./components/dashboard/DashboardComp";
 
 function App() {
   return (
-    <div className='app' style={{width:'100vw',height:'100vh'}}>
-      <Layout>
+    <div className="app" style={{ width: "100vw", height: "100vh" }}>
+      {/* <Layout>
         <Routes>
-        <Route path='/' element={ <DefaultPage/>}/>
-            <Route path='/swap' element={ <SwapComponent/>}/>
-            <Route path='/assets' element={ <AssetComponent/>}/>
-            
+          <Route path="/swap" element={<SwapComponent />} />
+          <Route path="/swap" element={<DashBoard />} />
         </Routes>
-      </Layout>
-
+      </Layout> */}
+      <DashBoardComp />
     </div>
   );
 }
