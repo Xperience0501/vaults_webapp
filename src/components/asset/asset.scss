@@ -198,3 +198,55 @@
     }
   }
 }
+
+
+@media screen and (max-width:1023px) {
+  .asset-main{
+    .buttons-div{
+      width: 70%;
+      left: 15%;
+    }
+
+    .asset-details{
+      flex-wrap: wrap;
+      width: 90%;
+      height: fit-content;
+      gap: 0;
+      .assets-balance{
+        width: 50%;
+        height: 120px;
+      }
+    }
+    .all-assets{
+      width: 90%;
+      top: 60%;
+      flex-direction: column;
+      height: fit-content;
+      gap: 15px;
+      .assets-table-heading{
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+      }
+      .assets-table-controls{
+        width: 100%;
+        .zero-switch{
+          font-size: 12px;
+          letter-spacing: normal;
+        }
+        .sort-table{
+          font-size: 12px;
+        }
+        .assets-table-search{
+          .zero-switch{
+            top: 17%;
+          }
+        }
+      }
+    }
+    .assets-table{
+      width: 90%;
+      top: 70%;
+    }
+  }
+}

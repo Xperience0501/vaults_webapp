@@ -52,3 +52,15 @@ justify-content: center;
     // }
 }
 }
+
+@media screen and (max-width:1023px) {
+    .sidebar-main{
+      justify-content: flex-start;
+      padding-left: 6%;
+
+      .sidebar-tabs{
+        height: fit-content;
+        width: 80%;
+      }
+    }
+}
