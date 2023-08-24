@@ -20,6 +20,8 @@ function SideBar() {
       navigate("/swap");
     } else if (navigateTo === "Assets") {
       navigate("/assets");
+    }else if (navigateTo === "Pool") {
+      navigate("/pool");
     }
   };
 
@@ -28,11 +30,12 @@ function SideBar() {
       setselectedTab("swap");
     } else if (window.location.pathname === "/assets") {
       setselectedTab("assets");
-    } else {
+    } else if (window.location.pathname === "/pool") {
+      setselectedTab("pool");
+    }else {
       setselectedTab(null);
     }
-  }, []);
-
+  }, [window.location.pathname]);
   return (
     <div className="sidebar-main">
       <div className="sidebar-tabs">
