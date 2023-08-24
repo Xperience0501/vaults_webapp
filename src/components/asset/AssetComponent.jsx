@@ -129,6 +129,7 @@ function AssetComponent() {
       </div>
       <div className="assets-table">
         <table className="assets-transac-table">
+          <thead>
           <tr>
             <th
               style={{ width: "35%", textAlign: "start", paddingLeft: "35px" }}
@@ -139,6 +140,7 @@ function AssetComponent() {
             <th>Deposit</th>
             <th>Withdraw</th>
           </tr>
+          </thead>
         </table>
       </div>
     </div>
