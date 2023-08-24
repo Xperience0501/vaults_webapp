@@ -19,10 +19,10 @@ function Layout({children}) {
         <Grid height={'8%'} item xs={12} sm={12} md={12} lg={12}>
           <LayoutHeader/>
           </Grid>
-           <Grid height={'92%'} item md={2.15} lg={2.15}>
+           <Grid height={'92%'} item  sm={2.15} md={2.15} lg={2.15}>
            <SideBar/>
           </Grid> 
-          <Grid height={'92%'} item md={9.85} lg={9.85} sx={{overflow:'auto'}}>
+          <Grid height={'92%'} item  sm={9.85} md={9.85} lg={9.85} sx={{overflow:'auto'}}>
           <Routes>
             <Route path='/' element={ <DefaultPage/>}/>
             <Route path='/swap' element={ <SwapComponent/>}/>
